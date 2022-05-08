@@ -1,54 +1,36 @@
+/*
+login.html
+로그인 페이지
+*/
 
-h1{
-    text-align: center;
-}
-* {
-  box-sizing: border-box;
-  font-family: 'Noto Sans KR', sans-serif;
-  border-radius: 5px;
-}
- 
-body {
-  margin: 0;
-  background-color: #4a96f8;
-}
- 
-.login-form {
-    width: 300px;
-    background-color: #EEEFF1;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 50px;
-    padding: 20px;
-    text-align: center;
-    border: none;
-    
-}
- 
-.text-field {
-      font-size: 14px;
-      padding: 10px;
-      border: none;
-      width: 260px;
-      margin-bottom: 10px;
- 
-}
- 
-.btLogin {
-  font-size: 14px;
-  border: none;
-  padding: 10px;
-  width: 260px;
-  background-color: #458ee2;
-  margin-bottom: 30px;
-  color: white;
-}
- 
-.links {
-    text-align: center;
-}
- 
-.links a {
-  font-size: 12px;
-  color: #9B9B9B;
-}
+
+/*
+signin.html
+회원가입 페이지
+*/
+
+/*
+main.html
+메인페이지
+*/
+
+.hr {border-bottom: 1px solid; height: 85px; margin-top: 20px;}
+.hr .logo_box{margin-left: 40px;}
+.hr div{display: inline-block; text-align: center;}
+.hr .info{float: right;}
+.hr .info .img_box{position: relative; top: 10px; width: 30px; margin: 5px;}
+.hr .info img{width: 100%;}
+.hr .info .logOut_btn{width:100px ; color: #ffffff; background-color: #438BBD; padding: 10px;}
+
+
+.menu { width: 19%; float: left; border-right: 1px solid; height: 500px; text-align: center;}
+.menu ul{list-style: none; padding: 0 8px 0 0;}
+.menu ul li{ color: #ffffff; background-color: #438BBD; padding: 10px;}
+
+
+
+.content{width: 80%; float: right; text-align: center;}
+.content .instance_insert{float: right; width: 100px; color: #ffffff; background-color: #438BBD; padding: 10px; margin: 13px 13px 20px 13px;}
+.content .instance_table{clear: both; margin:5px 10px 0 10px;}
+.content .instance_table th{border-bottom:1px solid}
+.content .instance_table td{border-bottom:1px solid}
