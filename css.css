@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+*{font-family: 'Noto Sans KR', sans-serif;}
+
+
+
 /*
 login.html
 로그인 페이지
@@ -13,6 +18,8 @@ signin.html
 main.html
 메인페이지
 */
+ul{list-style: none}
+li{transition: all 0.3s;}
 
 .hr {border-bottom: 1px solid; height: 85px; margin-top: 20px;}
 .hr .logo_box{margin-left: 40px;}
@@ -25,12 +32,29 @@ main.html
 
 .menu { width: 19%; float: left; border-right: 1px solid; height: 500px; text-align: center;}
 .menu ul{list-style: none; padding: 0 8px 0 0;}
-.menu ul li{ color: #ffffff; background-color: #438BBD; padding: 10px;}
+.menu ul li{  padding: 10px;}
+.menu ul li:hover{color:#ffffff; background-color: #438BBD ;}
 
 
 
-.content{width: 80%; float: right; text-align: center;}
-.content .instance_insert{float: right; width: 100px; color: #ffffff; background-color: #438BBD; padding: 10px; margin: 13px 13px 20px 13px;}
-.content .instance_table{clear: both; margin:5px 10px 0 10px;}
-.content .instance_table th{border-bottom:1px solid}
-.content .instance_table td{border-bottom:1px solid}
+.content{width: 80%; float: right;}
+.content.list .instance_insert{float: right; width: 100px; color: #ffffff; background-color: #438BBD; padding: 10px; margin: 13px 13px 20px 13px;}
+.content.list .instance_table{clear: both; margin:5px 10px 0 10px; text-align: center;}
+.content.list .instance_table th{border-bottom:1px solid}
+.content.list .instance_table td{border-bottom:1px solid}
+
+
+.content.info{display: none}
+.content.info .user_info {margin: 20% auto 0 auto;}
+.content.info .user_info tr{height: 30px; text-align: left;}
+.content.info .user_info th{width: 100px}
+.content.info .user_info td .pw_change { color:#ffffff; background-color: #438BBD; width: 100px; padding: 5px; text-align: center;}
+
+
+
+
+
+.instance_layer {display: none; background-color: rgba(0, 0, 0, 0.7); position: fixed; left: 0; top: 0; width: 100%; height: 100%}
+.instance_layer .popup{ background-color: #ffffff; width: 50%; position: relative; height: 450px; top:20%; margin: 0 auto }
+.instance_layer .popup{text-align: right;}
+.instance_layer .popup img{width: 30px; padding: 10px}
