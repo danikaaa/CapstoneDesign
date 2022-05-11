@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css.css">
         <script src="../lib/jquery-3.6.0.min.js"></script>
+        <script src="../main.js"></script>
         <title>JJ 컴퓨터공학과 사이버 실습실</title>
     </head>
     <body>
@@ -86,45 +87,3 @@
 
     </footer>
 </html>
-
-<script>
-
-    $(function (){
-        $('.instance_insert').click(function(){
-            $('.instance_layer').fadeIn();
-        });
-
-        $('.close').click(function (){
-            $('.instance_layer').fadeOut();
-        });
-
-        $('.logOut_btn').click(function (){
-
-            if(confirm("로그아웃 하시겠습니까?") == true){
-                location.href="../index.html";
-            }
-            else{
-                return ;
-            }
-
-        });
-
-        $('li.user_info').click(function (){
-            $('.content.list').hide();
-            $('.content.info').show();
-
-
-        });
-
-        $('li.list').click(function (){
-            $('.content.info').hide();
-            $('.content.list').show();
-
-
-        });
-
-
-
-    });
-
-</script>
