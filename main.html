@@ -3,40 +3,43 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css.css">
+        <script src="../lib/jquery-3.6.0.min.js"></script>
         <title>JJ 컴퓨터공학과 사이버 실습실</title>
     </head>
     <body>
         <div class="hr">
-            <a><img src="https://www.jj.ac.kr/cse/_res/img/comm/logo.png"></a>
+            <a><div class="logo_box"><img src="https://www.jj.ac.kr/cse/_res/img/comm/logo.png"></div></a>
             <div class="info">
-                <div class="user_name">사용자이름</div>
-                <div><img src="img/icon/icon_user.png"></div>
+                <div class="user_name">이수연님</div>
+                <div class="img_box"><img src="img/icon/icon_user.png"></div>
                 <div class="logOut_btn">로그아웃</div>
             </div>
             
         </div>
         <div class="menu">
-            <div>인스턴트 목록</div>
-            <div>회원정보</div>
+            <ul>
+                <li class="list">인스턴스 목록</li>
+                <li class="user_info">회원정보</li>
+            </ul>
         </div>
-        <div class="content">
+        <div class="content list">
                 <div class="instance_insert">인스턴트 생성</div>
             
             <div class="instance_table">
             <table>
                 <tr>
-                    <th><input type="checkbox"></th>
-                    <th>인스턴스 이름</th>
-                    <th>IP 주소</th>
-                    <th>Flavor</th>
-                    <th>Status</th>
-                    <th>Powerstate</th>
-                    <th>Actions</th>
+                    <th style="width: 5%"><input type="checkbox"></th>
+                    <th style="width: 20%">인스턴스 이름</th>
+                    <th style="width: 15%">IP 주소</th>
+                    <th style="width: 15%">Flavor</th>
+                    <th style="width: 10%">Status</th>
+                    <th style="width: 10%">Powerstate</th>
+                    <th style="width: 15%">Actions</th>
                 </tr>
                 <tr>
                     <td><input type="checkbox"></td>
                     <td>Cent OS 7</td>
-                    <td>8.8.8.8</td>
+                    <td>111.111.111.111</td>
                     <td>c1.saml</td>
                     <td>Active</td>
                     <td>Running</td>
@@ -45,8 +48,83 @@
             </table>
             </div>
         </div>
+
+        <div class="content info">
+            <table class="user_info">
+                <tr>
+                    <th>이름</th>
+                    <td>이수연</td>
+                </tr>
+                <tr>
+                    <th>아이디</th>
+                    <td>201968014</td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td>dltndus9563@naver.com</td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td><div class="pw_change">비밀번호변경</div></td>
+                </tr>
+            </table>
+        </div>
+
+
+    <div class="instance_layer">
+        <div class="popup">
+            <div class="close"><img src="img/icon/icon_close.png"></div>
+            <div class="insert_box">
+
+            </div>
+        </div>
+    </div>
+
+
     </body>
     <footer>
 
     </footer>
 </html>
+
+<script>
+
+    $(function (){
+        $('.instance_insert').click(function(){
+            $('.instance_layer').fadeIn();
+        });
+
+        $('.close').click(function (){
+            $('.instance_layer').fadeOut();
+        });
+
+        $('.logOut_btn').click(function (){
+
+            if(confirm("로그아웃 하시겠습니까?") == true){
+                location.href="../index.html";
+            }
+            else{
+                return ;
+            }
+
+        });
+
+        $('li.user_info').click(function (){
+            $('.content.list').hide();
+            $('.content.info').show();
+
+
+        });
+
+        $('li.list').click(function (){
+            $('.content.info').hide();
+            $('.content.list').show();
+
+
+        });
+
+
+
+    });
+
+</script>
