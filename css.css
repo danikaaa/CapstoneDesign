@@ -38,7 +38,7 @@ li{transition: all 0.3s;}
 
 
 .content{width: 80%; float: right;}
-.content.list .instance_insert{float: right; width: 100px; color: #ffffff; background-color: #438BBD; padding: 10px; margin: 13px 13px 20px 13px;}
+.content.list .instance_insert{float: right; width: 100px; text-align:center; color: #ffffff; background-color: #438BBD; padding: 10px; margin: 13px 13px 20px 13px;}
 .content.list .instance_table{clear: both; margin:5px 10px 0 10px; text-align: center;}
 .content.list .instance_table th{border-bottom:1px solid}
 .content.list .instance_table td{border-bottom:1px solid}
@@ -55,6 +55,29 @@ li{transition: all 0.3s;}
 
 
 .instance_layer {display: none; background-color: rgba(0, 0, 0, 0.7); position: fixed; left: 0; top: 0; width: 100%; height: 100%}
-.instance_layer .popup{ background-color: #ffffff; width: 50%; position: relative; height: 450px; top:20%; margin: 0 auto }
-.instance_layer .popup{text-align: right;}
-.instance_layer .popup img{width: 30px; padding: 10px}
+.pw_layer {display: none; background-color: rgba(0, 0, 0, 0.7); position: fixed; left: 0; top: 0; width: 100%; height: 100%}
+.popup{ background-color: #ffffff; width: 50%; position: relative; height: 450px; top:20%; margin: 0 auto }
+.popup .close{float: right}
+.popup img{width: 30px; padding: 10px}
+.instance_layer .popup .insert_box .box_hr {border-bottom: 1px solid}
+.instance_layer .popup .insert_box .box_hr h2{margin: 0; padding: 10px}
+.instance_layer .popup .insert_box .box_menu {width: 19%; float: left; border-right: 1px solid; height: 370px; text-align: center;}
+.instance_layer .popup .insert_box .box_menu ul{padding: 0px;}
+.instance_layer .popup .insert_box .box_menu li{margin: 5px; width: 98px; line-height: 33px; height: 33px;}
+.instance_layer .popup .insert_box .box_menu li.on{color:#ffffff; background-color: #438BBD;}
+
+.instance_layer .popup .insert_box .box_content { width: 75%; float: right; margin-top: 20px;}
+.instance_layer .popup .insert_box .box_content div{margin-bottom: 15px}
+
+.instance_layer .popup .box_flavors table{border: 1px solid #438BBD; text-align: center}
+
+.instance_layer .popup .insert_box .box_btn{float: right; position:absolute; bottom: 15px; right: 20px}
+.instance_layer .popup .insert_box .box_btn button{color: #ffffff; background-color: #438BBD; border: none; width: 70px; padding: 5px; font-size: 18px}
+
+.pw_layer .pw_content .box_hr{border-bottom: 1px solid}
+.pw_layer .pw_content .box_hr h2{margin: 0; padding: 10px}
+.pw_layer .pw_content .pw_box {margin: 35px auto 0 auto}
+.pw_layer .pw_content .pw_box tr{height: 45px}
+.pw_layer .pw_content  .box_btn{margin-top: 30px; text-align: center}
+.pw_layer .pw_content button{color: #ffffff; background-color: #438BBD; border: none; width: 90px; padding: 5px; font-size: 18px;}
+
