@@ -76,8 +76,100 @@
         <div class="popup">
             <div class="close"><img src="img/icon/icon_close.png"></div>
             <div class="insert_box">
+                <div class="box_hr">
+                    <h2>인스턴스 생성</h2>
+                </div>
+                <div class="box_menu">
+                    <ul>
+                        <li class="menu_info on">세부정보</li>
+                        <li class="menu_os">OS</li>
+                        <li class="menu_flavors">Flavors</li>
+                    </ul>
+                </div>
+                <form>
+                <div class="box_content">
+                    <div class="box_info box_on">
+                        <div class="instance_name"> 인스턴스 이름 <br><input type="text" value="" required></div>
+                        <div class="instance_zone">가용구역 <br><input type="text" value="nova"></div>
+                        <div class="instance_cont">Cont <br><input type="text" value="1"></div>
+                    </div>
+                    <div class="box_os" style="display: none">
+                        <div>OS 선택</div>
+                        <div class="os_1"><input type="radio" name="os_radio" value="CentOS 7" checked>CentOS 7</div>
+                        <div class="os_1"><input type="radio" name="os_radio" value="Ubuntu 18.04LST">Ubuntu 18.04LST</div>
+                        <div class="os_1"><input type="radio" name="os_radio" value="Ubuntu 20.04LST">Ubuntu 20.04LST</div>
+                    </div>
+                    <div class="box_flavors" style="display: none">
+                        <div>Flavors</div>
+                        <table>
+                            <tr>
+                                <th style="width: 20%;">이름</th>
+                                <th style="width: 15%;">VCPUS</th>
+                                <th style="width: 15%;">PAM</th>
+                                <th style="width: 15%;">용량</th>
+                                <th style="width: 15%;">공용</th>
+                            </tr>
+                            <tr>
+                                <td>m1.smal</td>
+                                <td>1</td>
+                                <td>2GB</td>
+                                <td>20GB</td>
+                                <td>yes</td>
+                            </tr>
+                            <tr><td>m1.smal</td><td>1</td><td>2GB</td><td>20GB</td><td>yes</td></tr>
+                            <tr><td>m1.smal</td><td>1</td><td>2GB</td><td>20GB</td><td>yes</td></tr>
+                            <tr><td>m1.smal</td><td>1</td><td>2GB</td><td>20GB</td><td>yes</td></tr>
+                            <tr><td>m1.smal</td><td>1</td><td>2GB</td><td>20GB</td><td>yes</td></tr>
+                            <tr><td>m1.smal</td><td>1</td><td>2GB</td><td>20GB</td><td>yes</td></tr>
+                            <tr><td>m1.smal</td><td>1</td><td>2GB</td><td>20GB</td><td>yes</td></tr>
+                            <tr><td>m1.smal</td><td>1</td><td>2GB</td><td>20GB</td><td>yes</td></tr>
+                            <tr><td>m1.smal</td><td>1</td><td>2GB</td><td>20GB</td><td>yes</td></tr>
+                            <tr><td>m1.smal</td><td>1</td><td>2GB</td><td>20GB</td><td>yes</td></tr>
+                            <tr><td>m1.smal</td><td>1</td><td>2GB</td><td>20GB</td><td>yes</td></tr>
+                            <tr><td>m1.smal</td><td>1</td><td>2GB</td><td>20GB</td><td>yes</td></tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="box_btn">
+                    <button type="button" class="cancel_btn">cancel</button>
+                    <button type="button" class="next_btn">next</button>
+                    <button type="button" class="back_btn_1" style="display: none">back</button>
+                    <button type="button" class="next_btn_1" style="display: none">next</button>
+                    <button type="button" class="back_btn_2" style="display: none">back</button>
+                    <button type="button" class="create_btn" style="display: none">create</button>
+                </div>
+                </form>
 
             </div>
+        </div>
+    </div>
+    <div class="pw_layer">
+        <div class="popup">
+            <div class="close"><img src="img/icon/icon_close.png"></div>
+            <form>
+            <div class="pw_content">
+                <div class="box_hr"><h2>비밀번호변경</h2></div>
+                <table class="pw_box">
+                    <tr>
+                        <th>현재 비밀번호</th>
+                        <td><input type="password" name="pw"></td>
+                    </tr>
+                    <tr>
+                        <th>새 비밀번호</th>
+                        <td><input type="password" name="new_pw"></td>
+                    </tr>
+                    <tr>
+                        <th>새 비밀번호 확인</th>
+                        <td><input type="password" name="new_pw_check"></td>
+                    </tr>
+                </table>
+                <div class="box_btn"><button  type="submit" name="pw_ok">OK</button></div>
+            </div>
+            </form>
+
+
+
         </div>
     </div>
 
