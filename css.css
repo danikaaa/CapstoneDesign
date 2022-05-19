@@ -69,7 +69,10 @@ li{transition: all 0.3s;}
 .instance_layer .popup .insert_box .box_content { width: 75%; float: right; margin-top: 20px;}
 .instance_layer .popup .insert_box .box_content div{margin-bottom: 15px}
 
-.instance_layer .popup .box_flavors table{border: 1px solid #438BBD; text-align: center}
+
+.instance_layer .popup .box_flavors .flavors_table{overflow: scroll; height: 250px; border: 1px solid #438BBD; width: 370px;}
+.instance_layer .popup .box_flavors table{text-align: center}
+.instance_layer .popup .box_flavors table th{position: sticky; top:0; background-color:#ffffff}
 
 .instance_layer .popup .insert_box .box_btn{float: right; position:absolute; bottom: 15px; right: 20px}
 .instance_layer .popup .insert_box .box_btn button{color: #ffffff; background-color: #438BBD; border: none; width: 70px; padding: 5px; font-size: 18px}
