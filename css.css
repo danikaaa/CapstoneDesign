@@ -42,6 +42,7 @@ li{transition: all 0.3s;}
 .content.list .instance_table{clear: both; margin:5px 10px 0 10px; text-align: center;}
 .content.list .instance_table th{border-bottom:1px solid}
 .content.list .instance_table td{border-bottom:1px solid}
+.content.list .instance_table .access_btn{border: none; background-color:#438BBD; width: 60px; height: 30px; color: #ffffff }
 
 
 .content.info{display: none}
@@ -49,9 +50,6 @@ li{transition: all 0.3s;}
 .content.info .user_info tr{height: 30px; text-align: left;}
 .content.info .user_info th{width: 100px}
 .content.info .user_info td .pw_change { color:#ffffff; background-color: #438BBD; width: 100px; padding: 5px; text-align: center;}
-
-
-
 
 
 .instance_layer {display: none; background-color: rgba(0, 0, 0, 0.7); position: fixed; left: 0; top: 0; width: 100%; height: 100%}
@@ -70,7 +68,7 @@ li{transition: all 0.3s;}
 .instance_layer .popup .insert_box .box_content div{margin-bottom: 15px}
 
 
-.instance_layer .popup .box_flavors .flavors_table{overflow: scroll; height: 250px; border: 1px solid #438BBD; width: 370px;}
+.instance_layer .popup .box_flavors .flavors_table{overflow: scroll; height: 250px; border: 1px solid #438BBD; width: 90%;}
 .instance_layer .popup .box_flavors table{text-align: center}
 .instance_layer .popup .box_flavors table th{position: sticky; top:0; background-color:#ffffff}
 
