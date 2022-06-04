@@ -1,0 +1,15 @@
+
+
+.slick-slide img{width: 80%; margin: 0 auto}
+
+button{display: none;}
+.btnBox{width: 30%; float: right;  position: fixed; top: 0; right: 0}
+.btnBox a{text-decoration:none; color: #000000;}
+.btnBox div{width: 185px; margin: 5px auto; height: 40px; line-height: 40px; background-color: #ffd50e; padding-left: 15px}
+.btnBox div:hover{opacity: 80%}
+.btnBox div img{position: relative; top: 7px; float: right; padding-right: 5px}
+
+
+
+
+footer{text-align: center; position: fixed; bottom: 0; width: 100%; padding: 5px; color: white; background-color: black; opacity: 70%}

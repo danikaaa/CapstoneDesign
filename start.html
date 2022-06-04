@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="start.css">
+    <script src="../lib/jquery-3.6.0.min.js"></script>
+    <title>JJ CSE</title>
+</head>
+<body>
+<div id ="slick">
+    <div class="slider">
+        <div class="slide" id="slide-1"><img src="../img/jj.jpeg"></div>
+        <div class="slide" id="slide-2"><img src="../img/jj1.jpeg"></div>
+        <div class="slide" id="slide-3"><img src="../img/jj3.jpeg"></div>
+        <div class="slide" id="slide-4"><img src="../img/jj4.jpeg"></div>
+    </div>
+</div>
+
+<div class="btnBox">
+    <a href="https://jj.ac.kr/"><div class="jj">전주대학교 바로가기<img src='../img/icon/icon_right.svg'></div></a>
+    <a href="https://instar.jj.ac.kr/"><div class="jj-instar">인스타<img src='../img/icon/icon_right.svg'></div></a>
+    <a href="https://onstar.jj.ac.kr/"><div class="jj-onstar">온스타<img src='../img/icon/icon_right.svg'></div></a>
+    <a href="https://cyber.jj.ac.kr/"><div class="jj-cyber">사이버캠퍼스<img src='../img/icon/icon_right.svg'></div></a>
+    <a href="http://202.31.246.46/login.html"><div class="jj-labsigin">실습실 회원가입<img src='../img/icon/icon_right.svg'></div></a>
+    <a href="http://202.31.246.46/horizon/"><div class="jj-lab">실습실 바로가기<img src='../img/icon/icon_right.svg'></div></a>
+</div>
+
+</body>
+
+<footer>
+    전주대학교 컴퓨터공학과
+</footer>
+</html>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider').slick({
+            autoplay: true,
+            // autoplaySpeed: 2000,
+            // prevArrow : "<button type='button'></button>",
+            // nextArrow : "<button type='button' style='display: none'></button>", //화살표 커스텀
+
+        });
+
+    });
+</script>
