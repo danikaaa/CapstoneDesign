@@ -1,14 +1,17 @@
+.slick-slide img{width: 100%; height: 100%}
 
+.slide .tit{position: relative; top:45px; left: 80px}
+.slide .tit h3{font-size: 30px; margin-bottom: 0}
+.tit p{font-size: 20px}
+.tit a{text-decoration:none;}
+.tit a span{border: 1px solid; padding: 8px 40px; color: black; }
 
-.slick-slide img{width: 80%; margin: 0 auto}
-
-button{display: none;}
-.btnBox{width: 30%; float: right;  position: fixed; top: 0; right: 0}
-.btnBox a{text-decoration:none; color: #000000;}
-.btnBox div{width: 185px; margin: 5px auto; height: 40px; line-height: 40px; background-color: #ffd50e; padding-left: 15px}
-.btnBox div:hover{opacity: 80%}
-.btnBox div img{position: relative; top: 7px; float: right; padding-right: 5px}
-
+.next{display: inline-block; width: 30px}
+.prev{display: inline-block; width: 30px}
+div#pager{position: absolute; margin-left: 60px; top: 250px;}
+ul.slick-dots{padding-left: 5px; list-style: none; display: inline-block; margin: 10px 0}
+li{ border: 1px solid #cccccc; width: 100px; float: left; margin-right: 5px;}
+li.slick-active{border-color: black}
 
 
 
