@@ -4,31 +4,56 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="start.css">
     <script src="../lib/jquery-3.6.0.min.js"></script>
+    <link href="../img/icon/jjjj2.png" rel="shortcut icon" type="image/x-icon">
     <title>JJ CSE</title>
 </head>
 <body>
 <div id ="slick">
     <div class="slider">
-        <div class="slide" id="slide-1"><img src="../img/jj.jpeg"></div>
-        <div class="slide" id="slide-2"><img src="../img/jj1.jpeg"></div>
-        <div class="slide" id="slide-3"><img src="../img/jj3.jpeg"></div>
-        <div class="slide" id="slide-4"><img src="../img/jj4.jpeg"></div>
+        <div class="slide" id="slide-1" style="background-image: url('../img/jj.jpeg'); height: 1200px; background-size: cover" >
+            <div class="tit">
+                <h3>전주대학교</h3>
+                <p>수퍼스타를 키우는 곳.</p>
+                <a href="https://jj.ac.kr/"><span class="jj">바로가기</span></a>
+            </div>
+        </div>
+        <div class="slide" id="slide-2" style="background-image: url('../img/jj1.jpeg'); height: 1200px ; background-size: cover">
+                <div class="tit">
+                    <h3>Cyber Lab</h3>
+                    <p>컴퓨터공학과 학생들을 위한 사이버 실습실.</p>
+                    <a href="http://202.31.246.46/horizon/"><span class="jj-lab">바로가기</span></a>
+                </div>
+        </div>
+        <div class="slide" id="slide-3" style="background-image: url('../img/jj6.jpg'); height: 1200px; background-size: cover">
+                <div class="tit">
+                    <h3>inStar</h3>
+                    <p>학생포털서비스.</p>
+                    <a href="https://instar.jj.ac.kr/"><span class="jj-instar">바로가기</span></a>
+                </div>
+        </div>
+        <div class="slide" id="slide-4" style="background-image: url('../img/jj4.jpeg'); height: 1200px; background-size: cover">
+                <div class="tit">
+                    <h3>onStar</h3>
+                    <p>학생역량개발시스템.</p>
+                    <a href="https://onstar.jj.ac.kr/"><span class="jj-onstar">바로가기</span></a>
+                </div>
+        </div>
     </div>
 </div>
 
-<div class="btnBox">
-    <a href="https://jj.ac.kr/"><div class="jj">전주대학교 바로가기<img src='../img/icon/icon_right.svg'></div></a>
-    <a href="https://instar.jj.ac.kr/"><div class="jj-instar">인스타<img src='../img/icon/icon_right.svg'></div></a>
-    <a href="https://onstar.jj.ac.kr/"><div class="jj-onstar">온스타<img src='../img/icon/icon_right.svg'></div></a>
-    <a href="https://cyber.jj.ac.kr/"><div class="jj-cyber">사이버캠퍼스<img src='../img/icon/icon_right.svg'></div></a>
-    <a href="http://202.31.246.46/login.html"><div class="jj-labsigin">실습실 회원가입<img src='../img/icon/icon_right.svg'></div></a>
-    <a href="http://202.31.246.46/horizon/"><div class="jj-lab">실습실 바로가기<img src='../img/icon/icon_right.svg'></div></a>
+<div id="pager">
+    <div class="prev">
+        <div><img src ='../img/icon/icon_left.svg'></div>
+    </div>
+    <div class="next">
+        <div><img src ='../img/icon/icon_right.svg'></div>
+    </div>
 </div>
 
 </body>
 
 <footer>
-    Jeonju University, Computer Science engineering
+   <img src="../img/icon/jjjj.png" style="width: 10px"> Jeonju University, Computer Science engineering
 </footer>
 </html>
 
@@ -37,12 +62,27 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('.slider').slick({
-            autoplay: true,
+            // autoplay: true,
             // autoplaySpeed: 2000,
-            prevArrow : "",
-            nextArrow : "", //화살표 커스텀
+            prevArrow : '.prev',
+            nextArrow : '.next', //화살표 커스텀
+            dotsClass : "slick-dots",
+            draggable : true,
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+
 
         });
+
+    });
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        $('#pager .prev').after($('ul.slick-dots'));
 
     });
 </script>
